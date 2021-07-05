@@ -1,0 +1,181 @@
+/* pages/comment/comment.wxss */
+.top {
+  align-items: center;
+  min-height: 0rpx;
+  height: 100rpx;
+  background-color: #f7f7f7;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.othericon {
+  margin-left: 5%;
+  width: 50rpx;
+  height: 40rpx;
+  display: flex;
+}
+
+.user {
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_info {
+  width: 80%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_name {
+  font-size: 30rpx;
+}
+
+.other_info {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  color: #c7c7c7;
+}
+
+.time {
+  margin-right: 2%;
+}
+
+.area {
+  margin-right: 2%;
+}
+
+.age {
+  margin-right: 2%;
+}
+
+.follow {
+  justify-content: center;
+  color: crimson;
+  width: 20%;
+  display: flex;
+  height: 10%;
+  font-size: 30rpx;
+  background-color: rgb(214, 166, 166);
+}
+
+.div {
+  width: 100%;
+  height: 1rpx;
+  background-color: #c7c7c7;
+}
+
+.category {
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 90%;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.words {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 90%;
+  margin: 5%;
+  font-size: 30rpx;
+}
+
+.div1{
+  width: 100%;
+  height: 20rpx;
+  background-color: #f7f7f7;
+}
+
+.comment{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+}
+
+.words1 {
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 25rpx;
+}
+
+.steps {
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.image{
+  width:680rpx;
+  height:450rpx;
+  position: relative;
+}
+
+.score {
+  box-shadow:0px 8px 32px rgba(0,0,0,.1);
+  border-radius: 10rpx;
+  top:300rpx;
+  margin-left: 80%;
+  text-align: left;
+  position: absolute; 
+  color: red;
+  font-weight: bold;
+  background-color: white;
+  font-size: 15px;
+  width: 50rpx;
+  height: 50rpx;
+  /* 设置容器高度,显示渐变的高度 */
+  text-align: right;
+  /* 背景渐变:bottom:从下到上,右0.8向0透明渐变 */
+  /* background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); */
+  display: flex;
+  /* flex布局,控制容器内文字元素在底部 */
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
+}
+
+.timelength{
+  box-shadow:0px 8px 32px rgba(0,0,0,.1);
+ 
+  bottom: 0;
+  margin-left: 80%;
+  text-align: left;
+  position: absolute; 
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  width: 65rpx;
+  height: 30rpx;
+  text-align: right;
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1% 1% 1% 1%;
+}

@@ -1,0 +1,26 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+  <view class="top">
+    <view>
+      <image style="width:60rpx;height:60rpx" src="cloud://april-5givmaxl24d3e083.6170-april-5givmaxl24d3e083-1306056725/image/icon/flkc.png" />
+    </view>
+    <view style="margin-left:2%">
+      <text style="font-size:30rpx;margin-left=5%;font-weight:bold">素描基础</text>
+    </view>
+  </view>
+  <view class="div" />
+  <view bindtap="detail" data-title="{{item.title}}" data-vedios="{{item.vedios}}" data-obj="{{item}}" class="listbg" wx:for="{{list}}" wx:key="index" wx:for-item="item">
+    <view class="list_left">
+      <view>
+        <text style="font-size:30rpx;font-weight:bold">{{item.title}}</text>
+      </view>
+      <view class="list_bottom">
+        <image style="width:37rpx;height:40rpx;margin-top:20%" src="cloud://april-5givmaxl24d3e083.6170-april-5givmaxl24d3e083-1306056725/image/icon/fire.png" />
+        <text style="font-size:30rpx;margin-top:22%;margin-left:5%;color:#79797979">{{item.count}}人学习</text>
+      </view>
+    </view>
+    <view class="list_right">
+      <image style="width:280rpx;height:180rpx" mode='scaleToFill' src="{{item.src}}" />
+    </view>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/course1/course1",
+    "pages/comment/comment",
+    "pages/course/course"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#544dff",
+    "navigationBarTitleText": "与绘",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "/image/selected/community.png",
+        "iconPath": "/image/unselected/community.png",
+        "pagePath": "pages/index/index",
+        "text": "社区"
+      },
+      {
+        "selectedIconPath": "/image/selected/course.png",
+        "iconPath": "/image/unselected/course.png",
+        "pagePath": "pages/course/course",
+        "text": "课程"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

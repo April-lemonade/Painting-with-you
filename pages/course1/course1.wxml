@@ -1,0 +1,25 @@
+<!--pages/course1/course1.wxml-->
+<!-- <text>pages/course1/course1.wxml</text> -->
+<view class="container">
+  <view class="top">
+    <view>
+      <image style="width:60rpx;height:60rpx" src="cloud://april-5givmaxl24d3e083.6170-april-5givmaxl24d3e083-1306056725/image/icon/flkc.png" />
+    </view>
+    <view style="margin-left:2%">
+      <text style="font-size:30rpx;margin-left=5%;font-weight:bold">{{obj.title}}</text>
+    </view>
+  </view>
+  <view class="listbg" wx:for="{{obj.vedios}}" wx:key="index" wx:for-item="item">
+    <view>
+      <text style="font-size:30rpx;font-weight:bold">{{item.subtitle}}</text>
+      <!-- <view class="list_bottom">
+        <image style="width:37rpx;height:40rpx;margin-top:20%" src="cloud://april-5givmaxl24d3e083.6170-april-5givmaxl24d3e083-1306056725/image/icon/fire.png" />
+      </view> -->
+    </view>
+
+    <!-- <image style="width:280rpx;height:180rpx" mode='scaleToFill' src="{{item.src}}" /> -->
+    <video style="width:90%;margin-left:5%" src="{{item.url}}" danmu-list="{{danmuList}}" show-center-play-btn='{{false}}' show-play-btn="{{true}}"
+      controls picture-in-picture-mode="{{['push', 'pop']}}" bindenterpictureinpicture='bindVideoEnterPictureInPicture'
+      bindleavepictureinpicture='bindVideoLeavePictureInPicture'></video>
+  </view>
+</view>

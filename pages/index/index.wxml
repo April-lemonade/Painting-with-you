@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <input class="search0" placeholder-class="search" placeholder="大家都在搜 立方体怎么画" />
+    <view class="searchicon">
+      <icon type="search" />
+    </view>
+
+  </view>
+  <!-- <view class='navigator'>
+    <view class="headerItem" wx:for="{{topics}}" wx:bindtap='clickTop' wx:key="index" wx:for-item="topic">
+      <view class='headerItemView' bindtap='clickTopItem' data-yjs="{{index}}">
+        <view class='title'>{{topic.title}}</view>
+        <view class='line' wx:if="{{indexSelect==index}}"></view>
+      </view>
+    </view>
+    <view class="div"></view>
+  </view> -->
+  <view class="image">
+    <image style="border-radius: 30rpx; width:90%; height:350rpx; margin-left:5%;margin-right:5% margin-top:3%"
+      src="cloud://april-5givmaxl24d3e083.6170-april-5givmaxl24d3e083-1306056725/image/main.png" />
+  </view>
+  <view class="subtitles">精彩作品</view>
+  <view class="selection">
+    <view class="navibtn,{{currentSelectType == 'all' ? 'active' : ''}}" bindtap='selectedAll' data-id='all'>全部</view>
+    <view class="navibtn,{{currentSelectType == 'ed' ? 'active' : ''}}" bindtap='selectedEd' data-id="ed">已批改</view>
+    <view bindtap='selectedYx' data-id="tk" class="navibtn, {{currentSelectType == 'tk' ? 'active' : ''}}">80-100分
+    </view>
+    <view data-id="zhs" bindtap="selectedLh" class="navibtn,{{currentSelectType == 'zhs' ? 'active' : ''}}">70-80分
+    </view>
+    <view data-id="jg" bindtap="selectedJg" class="navibtn,{{currentSelectType == 'jg' ? 'active' : ''}}">60-70分</view>
+  </view>
+  <view class='gallery'>
+    <view class='content'>
+      <view class='content-item' wx:for="{{contentImgSrcs}}" wx:key="src" wx:for-item="item" wx:if="{{item.score>=minscore&&item.score<maxscore}}">
+        <block>
+          <image bindtap="detail" data-src="{{item.src}}" data-score="{{item.score}}" style="border-radius:20rpx" src="{{item.src}}" class="slide-image" mode='scaleToFill' />
+          <view wx:if="{{item.score>0}}" class="score">
+            <text>{{item.score}}</text>
+          </view>
+          <view style="font-size:25rpx;text-align:center">
+            <text>{{item.title}}</text>
+          </view>
+      
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
